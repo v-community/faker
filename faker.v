@@ -4,8 +4,8 @@
 
 import flag
 import os
-import rand
-import time
+
+import helpers
 
 fn main() {
     mut fp := flag.new_flag_parser(os.args)
@@ -19,22 +19,4 @@ fn main() {
         println('File does not exist')
         return
     }
-}
-
-fn print_generator_sample(path string) {
-    contents := os.read_file(path.trim_space()) or {
-        println('Failed to open $path')
-        return
-    }
-
-    lines := contents.split_into_lines()
-    length := lines.len
-
-    print_random_element(lines, length)
-}
-
-fn print_random_element(lines []string, length int) {
-    rand.seed(time.now().uni)
-
-    println(lines[rand.next(length-1)])
 }
