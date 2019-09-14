@@ -19,7 +19,7 @@ This gem is a port of [Ruby's Faker library](https://github.com/faker-ruby/faker
 ### NOTE
 * This is the `master` branch of Faker and may contain changes that are not yet released.
   Please refer the README of your version for the available methods.
-  List of all versions is [available here](https://github.com/vbrazo/faker/releases).
+  List of all versions is [available here](https://github.com/vcommunity/faker/releases).
 
 ## Installing
 ```bash
@@ -47,10 +47,10 @@ If your locale doesn't already exist, create it in the `data` directory
 and you can then override or add elements to suit your needs.
 
 ## Contributing
-See [CONTRIBUTING.md](https://github.com/vbrazo/faker/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/vcommunity/faker/blob/master/CONTRIBUTING.md).
 
 ## Contact
-Comments and feedback are welcome. Send an email to Vitor Oliveira via the [issues](https://github.com/vbrazo/faker/issues).
+Comments and feedback are welcome. Send an email to Vitor Oliveira via the [issues](https://github.com/vcommunity/faker/issues).
 
 ## License
 This code is free to use under the terms of the MIT license.
