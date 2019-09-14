@@ -54,7 +54,7 @@ If your locale doesn't already exist, create it in the `data` directory
 and you can then override or add elements to suit your needs.
 
 ## Contributing
-See [CONTRIBUTING.md](https://github.com/stympy/faker/blob/master/CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/vbrazo/faker/blob/master/CONTRIBUTING.md).
 
 ## Contact
 Comments and feedback are welcome. Send an email to Vitor Oliveira via the [issues](https://github.com/vbrazo/faker/issues).
