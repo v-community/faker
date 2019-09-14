@@ -35,5 +35,6 @@ fn print_generator_sample(path string) {
 
 fn print_random_element(lines []string, length int) {
     rand.seed(time.now().uni)
+
     println(lines[rand.next(length-1)])
 }
