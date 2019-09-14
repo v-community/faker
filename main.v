@@ -14,18 +14,22 @@ fn main() {
     path := './data/$generator/$method'
 
     if os.file_exists(path) {
-        contents := os.read_file(path.trim_space()) or {
-            println('Failed to open $path')
-            return
-        }
-
-        lines := contents.split_into_lines()
-        length := lines.len
-
-        rand.seed(time.now().uni)
-        println(lines[rand.next(length-1)])
+        print_generator_sample(path)
     } else {
         println('File does not exist')
         return
     }
+}
+
+fn print_generator_sample(path string) {
+    contents := os.read_file(path.trim_space()) or {
+        println('Failed to open $path')
+        return
+    }
+
+    lines := contents.split_into_lines()
+    length := lines.len
+
+    rand.seed(time.now().uni)
+    println(lines[rand.next(length-1)])
 }
